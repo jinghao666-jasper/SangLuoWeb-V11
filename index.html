@@ -1,0 +1,533 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sang Luo Jiu — Premium Qingxiang Baijiu. 1,500 years of heritage from Yongji, Shanxi.">
+  <title>Sang Luo Jiu · Official Website</title>
+  <link rel="stylesheet" href="css/style.css?v=10">
+  <style>
+    .vmodal{position:fixed;inset:0;background:rgba(0,0,0,.96);z-index:9999;
+      display:flex;align-items:center;justify-content:center;
+      opacity:0;visibility:hidden;transition:all .4s ease}
+    .vmodal.active{opacity:1;visibility:visible}
+    .vmodal-inner{position:relative;width:92vw;max-width:1100px;
+      transform:scale(.92);transition:transform .4s ease}
+    .vmodal.active .vmodal-inner{transform:scale(1)}
+    .vmodal video{width:100%;display:block;outline:none}
+    .vmodal-close{position:absolute;top:-44px;right:0;width:36px;height:36px;
+      border:1px solid rgba(255,255,255,.25);color:#fff;font-size:1.2rem;
+      display:flex;align-items:center;justify-content:center;cursor:pointer;
+      background:none;transition:all .25s ease}
+    .vmodal-close:hover{border-color:var(--gold);color:var(--gold)}
+  </style>
+</head>
+<body>
+
+<!-- ══ TOP NAV ═══════════════════════════════════════════ -->
+<header class="site-nav on-cover" id="mainNav">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon">桑</div>
+    <div class="nav-logo-texts">
+      <span class="nav-logo-company">Yongji Sangluowang Distillery Co., Ltd.</span>
+      <span class="nav-logo-brand">桑落酒</span>
+    </div>
+  </a>
+  <ul class="nav-menu" id="navMenu">
+    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+    <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+    <li class="nav-item"><a href="about.html" class="nav-link">Enterprise Overview</a></li>
+    <li class="nav-item"><a href="culture.html" class="nav-link">Sang Luo Culture</a></li>
+    <li class="nav-item has-dropdown">
+      <a href="service.html" class="nav-link">Services</a>
+      <ul class="nav-dropdown">
+        <li><a href="service.html#kefu">Customer Service</a></li>
+      </ul>
+    </li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ══ LEFT SIDEBAR ══════════════════════════════════════ -->
+<aside class="fp-sidebar">
+  <div class="fp-sidebar-slot on-cover" data-slot="0">
+    <span class="sec-en" style="color:rgba(245,237,224,.8)">SANG LUO<br>JIU</span>
+    <div class="sec-divider" style="background:rgba(184,145,42,.6)"></div>
+    <span class="sec-zh" style="color:rgba(245,237,224,.5)">桑落酒</span>
+  </div>
+  <div class="fp-sidebar-slot" data-slot="1">
+    <span class="sec-en">PRODUCT<br>CENTER</span>
+    <div class="sec-divider"></div>
+    <span class="sec-zh">产品中心</span>
+    <div class="fp-tabs">
+      <a class="fp-tab active" href="products.html">All Products</a>
+      <a class="fp-tab" href="products.html?cat=collector">Collector's Series</a>
+      <a class="fp-tab" href="products.html?cat=classic">Classic Series</a>
+    </div>
+  </div>
+  <div class="fp-sidebar-slot" data-slot="2">
+    <span class="sec-en">ENTERPRISE<br>OVERVIEW</span>
+    <div class="sec-divider"></div>
+    <span class="sec-zh">企业概况</span>
+    <div class="fp-tabs">
+      <a class="fp-tab active" data-tab="intro" href="about.html">Company Profile</a>
+      <a class="fp-tab" data-tab="vision" href="about.html">Our Vision</a>
+    </div>
+  </div>
+  <div class="fp-sidebar-slot" data-slot="3">
+    <span class="sec-en">SERVICE<br>CENTRE</span>
+    <div class="sec-divider"></div>
+    <span class="sec-zh">服务中心</span>
+  </div>
+</aside>
+
+<!-- ══ DOT NAVIGATION ═══════════════════════════════════ -->
+<div class="fp-dots"></div>
+<div class="fp-counter">01/04</div>
+
+<!-- ══ FULL-PAGE CONTAINER ══════════════════════════════ -->
+<div class="fp-wrap">
+<div class="fp-container" id="fpCont">
+
+  <!-- ╔══ SECTION 1: COVER ═══════════════════════════╗ -->
+  <section class="fp-section s-cover">
+    <video class="cover-video" autoplay muted loop playsinline preload="auto"
+           webkit-playsinline="true" x5-playsinline="true" x5-video-player-type="h5-page"
+           poster="picture/cover_poster.jpg">
+      <source src="video/e9d008e5d0138a65018805e3c97747e6.mp4" type="video/mp4">
+    </video>
+    <div class="cover-vid-mask"></div>
+    <div class="cover-overlay"></div>
+    <div class="cover-content">
+      <p class="cover-en" data-anim="from-top">Kia ora · Premium Qingxiang Baijiu · 1,500 Years of Heritage</p>
+      <h1 class="cover-title" data-anim="fade">SANG&nbsp;LUO&nbsp;JIU</h1>
+      <div class="cover-divider" data-anim="fade"></div>
+      <p class="cover-sub" data-anim="from-bottom">桑落酒 &ensp;·&ensp; Yongji, Shanxi</p>
+      <p class="cover-intro" data-anim="from-bottom">
+        Distilled from premium Yellow River wetland sorghum &ensp;·&ensp; fermented in ancient earthenware pits<br>
+        A pure, floral Qingxiang baijiu perfected over fifteen centuries
+      </p>
+      <div class="cover-btns" data-anim="from-bottom">
+        <a href="products.html" class="btn-cover-primary">Explore Products</a>
+        <a href="about.html"    class="btn-cover-ghost">Our Story</a>
+      </div>
+    </div>
+    <div class="cover-scroll">
+      <span class="cover-scroll-text">SCROLL</span>
+      <div class="cover-scroll-bar"></div>
+    </div>
+  </section>
+
+  <!-- ╔══ SECTION 2: PRODUCT CENTER ══════════════════╗ -->
+  <section class="fp-section s-products">
+    <div class="sec-bg-text" style="font-size:clamp(80px,14vw,140px);bottom:5%;right:-1%;
+         transform:rotate(-2deg);" data-anim="fade">SANG LUO JIU</div>
+    <div class="prod-slogan" data-anim="fade">桑落名酿&nbsp;香飘世界</div>
+
+    <div class="fp-inner">
+      <div class="sec-pane">
+        <div class="sec-head" data-anim="from-left">
+          <div class="sec-head-en">PRODUCT CENTER</div>
+          <h2 class="sec-head-zh">Featured Collection</h2>
+          <div class="sec-head-line"></div>
+        </div>
+
+        <div class="prod-grid">
+
+          <div class="prod-card" data-anim="from-bottom">
+            <div class="prod-img-wrap">
+              <img src="picture/0438a36a6314c2d9173dbc8e90948bf.jpg" alt="Signature 125ml">
+              <div class="prod-overlay">
+                <div class="prod-overlay-name">Signature · 125ml</div>
+                <div class="prod-overlay-tag">FLAGSHIP · QINGXIANG</div>
+                <a class="prod-overlay-btn" href="products.html">View Details</a>
+              </div>
+            </div>
+            <div class="prod-info">
+              <div class="prod-name">Signature · 125ml</div>
+              <div class="prod-tag">FLAGSHIP · QINGXIANG</div>
+            </div>
+          </div>
+
+          <div class="prod-card" data-anim="from-bottom">
+            <div class="prod-img-wrap">
+              <img src="picture/8f0be732a1d6a0eeb67de6581946cb1.jpg" alt="Black Gold 20 Year">
+              <div class="prod-overlay">
+                <div class="prod-overlay-name">Black Gold · 20 Year</div>
+                <div class="prod-overlay-tag">COLLECTOR'S RESERVE</div>
+                <a class="prod-overlay-btn" href="products.html">View Details</a>
+              </div>
+            </div>
+            <div class="prod-info">
+              <div class="prod-name">Black Gold · 20 Year</div>
+              <div class="prod-tag">COLLECTOR'S RESERVE</div>
+            </div>
+          </div>
+
+          <div class="prod-card" data-anim="from-bottom">
+            <div class="prod-img-wrap">
+              <img src="picture/a7ea745ca8af53b66c765518bc418e0.jpg" alt="Gold Cup">
+              <div class="prod-overlay">
+                <div class="prod-overlay-name">Gold Cup · 金樽</div>
+                <div class="prod-overlay-tag">CLASSIC · 42% VOL</div>
+                <a class="prod-overlay-btn" href="products.html">View Details</a>
+              </div>
+            </div>
+            <div class="prod-info">
+              <div class="prod-name">Gold Cup · 金樽</div>
+              <div class="prod-tag">CLASSIC · 42% VOL</div>
+            </div>
+          </div>
+
+          <div class="prod-card" data-anim="from-bottom">
+            <div class="prod-img-wrap">
+              <img src="picture/f7ad9a6a04086e1e94b24e99500272b.png" alt="Blue &amp; White Porcelain">
+              <div class="prod-overlay">
+                <div class="prod-overlay-name">Blue &amp; White Porcelain</div>
+                <div class="prod-overlay-tag">ARTISAN EDITION</div>
+                <a class="prod-overlay-btn" href="products.html">View Details</a>
+              </div>
+            </div>
+            <div class="prod-info">
+              <div class="prod-name">Blue &amp; White Porcelain</div>
+              <div class="prod-tag">ARTISAN EDITION</div>
+            </div>
+          </div>
+
+          <div class="prod-card" data-anim="from-bottom">
+            <div class="prod-img-wrap">
+              <img src="picture/220e2e04e55b52044f6ca4cb220717e.jpg" alt="Guan Fu Yan">
+              <div class="prod-overlay">
+                <div class="prod-overlay-name">Guan Fu Yan</div>
+                <div class="prod-overlay-tag">PREMIUM BANQUET</div>
+                <a class="prod-overlay-btn" href="products.html">View Details</a>
+              </div>
+            </div>
+            <div class="prod-info">
+              <div class="prod-name">Guan Fu Yan</div>
+              <div class="prod-tag">PREMIUM BANQUET</div>
+            </div>
+          </div>
+
+          <div class="prod-card" data-anim="from-bottom">
+            <div class="prod-img-wrap">
+              <img src="picture/5c1e008d6edf18c3876281bc9b11583.jpg" alt="Jade">
+              <div class="prod-overlay">
+                <div class="prod-overlay-name">Jade · 豆瓣</div>
+                <div class="prod-overlay-tag">CLASSIC · 52% VOL</div>
+                <a class="prod-overlay-btn" href="products.html">View Details</a>
+              </div>
+            </div>
+            <div class="prod-info">
+              <div class="prod-name">Jade · 豆瓣</div>
+              <div class="prod-tag">CLASSIC · 52% VOL</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="prod-footer" data-anim="from-bottom">
+          <div class="prod-arrows">
+            <div class="prod-arrow">&#8249;</div>
+            <div class="prod-arrow">&#8250;</div>
+          </div>
+          <a href="products.html" class="prod-more">more &rsaquo;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔══ SECTION 3: SERVICE CENTRE ══════════════════╗ -->
+  <section class="fp-section s-service">
+    <div class="svc-mountain"></div>
+    <div class="fp-inner">
+      <div class="sec-pane">
+        <div class="sec-head" data-anim="from-left">
+          <div class="sec-head-en">SERVICE CENTRE</div>
+          <h2 class="sec-head-zh">How We Can Help</h2>
+          <div class="sec-head-line"></div>
+        </div>
+
+        <div class="svc-grid">
+
+          <!-- Customer Service -->
+          <div class="svc-item" data-anim="from-bottom" onclick="location.href='service.html#kefu'">
+            <div class="svc-icon-svg-wrap">
+              <svg viewBox="0 0 60 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="22" y="2" width="16" height="5" rx="1.5" stroke="currentColor" stroke-width="1.3"/>
+                <rect x="24" y="7" width="12" height="11" stroke="currentColor" stroke-width="1.3"/>
+                <path d="M24 18C20 19 14 24 14 31V71C14 76 17 80 22 80H38C43 80 46 76 46 71V31C46 24 40 19 36 18Z" stroke="currentColor" stroke-width="1.3"/>
+                <line x1="14" y1="40" x2="46" y2="40" stroke="currentColor" stroke-width="0.7" opacity="0.5"/>
+                <line x1="14" y1="64" x2="46" y2="64" stroke="currentColor" stroke-width="0.7" opacity="0.5"/>
+                <!-- headset -->
+                <path d="M23 53C23 46 37 46 37 53" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+                <rect x="21" y="52" width="4" height="7" rx="1" stroke="currentColor" stroke-width="1.3"/>
+                <rect x="35" y="52" width="4" height="7" rx="1" stroke="currentColor" stroke-width="1.3"/>
+                <path d="M37 57C39 57 40 56 40 54" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+                <line x1="40" y1="54" x2="40" y2="58" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+                <line x1="38" y1="58" x2="42" y2="58" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="svc-label">Customer Service</div>
+          </div>
+
+          <!-- Bespoke Gifting -->
+          <div class="svc-item" data-anim="from-bottom" onclick="location.href='service.html'">
+            <div class="svc-icon-svg-wrap">
+              <svg viewBox="0 0 60 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="22" y="2" width="16" height="5" rx="1.5" stroke="currentColor" stroke-width="1.3"/>
+                <rect x="24" y="7" width="12" height="11" stroke="currentColor" stroke-width="1.3"/>
+                <path d="M24 18C20 19 14 24 14 31V71C14 76 17 80 22 80H38C43 80 46 76 46 71V31C46 24 40 19 36 18Z" stroke="currentColor" stroke-width="1.3"/>
+                <line x1="14" y1="40" x2="46" y2="40" stroke="currentColor" stroke-width="0.7" opacity="0.5"/>
+                <line x1="14" y1="64" x2="46" y2="64" stroke="currentColor" stroke-width="0.7" opacity="0.5"/>
+                <!-- gift box -->
+                <rect x="22" y="53" width="16" height="11" stroke="currentColor" stroke-width="1.3"/>
+                <rect x="21" y="49" width="18" height="5" stroke="currentColor" stroke-width="1.3"/>
+                <line x1="30" y1="49" x2="30" y2="64" stroke="currentColor" stroke-width="1.3"/>
+                <path d="M30 49C28 45 24 46 24 49" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+                <path d="M30 49C32 45 36 46 36 49" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+              </svg>
+            </div>
+            <div class="svc-label">Bespoke Gifting</div>
+          </div>
+
+          <!-- Wholesale Partners -->
+          <div class="svc-item" data-anim="from-bottom" onclick="location.href='service.html'">
+            <div class="svc-icon-svg-wrap">
+              <svg viewBox="0 0 60 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="22" y="2" width="16" height="5" rx="1.5" stroke="currentColor" stroke-width="1.3"/>
+                <rect x="24" y="7" width="12" height="11" stroke="currentColor" stroke-width="1.3"/>
+                <path d="M24 18C20 19 14 24 14 31V71C14 76 17 80 22 80H38C43 80 46 76 46 71V31C46 24 40 19 36 18Z" stroke="currentColor" stroke-width="1.3"/>
+                <line x1="14" y1="40" x2="46" y2="40" stroke="currentColor" stroke-width="0.7" opacity="0.5"/>
+                <line x1="14" y1="64" x2="46" y2="64" stroke="currentColor" stroke-width="0.7" opacity="0.5"/>
+                <!-- globe -->
+                <circle cx="30" cy="52" r="9" stroke="currentColor" stroke-width="1.3"/>
+                <ellipse cx="30" cy="52" rx="4.5" ry="9" stroke="currentColor" stroke-width="1"/>
+                <line x1="21" y1="49" x2="39" y2="49" stroke="currentColor" stroke-width="1" opacity="0.7"/>
+                <line x1="21" y1="55" x2="39" y2="55" stroke="currentColor" stroke-width="1" opacity="0.7"/>
+              </svg>
+            </div>
+            <div class="svc-label">Wholesale Partners</div>
+          </div>
+
+
+          <!-- Anti-counterfeiting -->
+          <div class="svc-item" data-anim="from-bottom" onclick="location.href='service.html'">
+            <div class="svc-icon-svg-wrap">
+              <svg viewBox="0 0 60 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="22" y="2" width="16" height="5" rx="1.5" stroke="currentColor" stroke-width="1.3"/>
+                <rect x="24" y="7" width="12" height="11" stroke="currentColor" stroke-width="1.3"/>
+                <path d="M24 18C20 19 14 24 14 31V71C14 76 17 80 22 80H38C43 80 46 76 46 71V31C46 24 40 19 36 18Z" stroke="currentColor" stroke-width="1.3"/>
+                <line x1="14" y1="40" x2="46" y2="40" stroke="currentColor" stroke-width="0.7" opacity="0.5"/>
+                <line x1="14" y1="64" x2="46" y2="64" stroke="currentColor" stroke-width="0.7" opacity="0.5"/>
+                <!-- QR code -->
+                <rect x="21" y="44" width="18" height="18" stroke="currentColor" stroke-width="1.2"/>
+                <rect x="23" y="46" width="5" height="5" stroke="currentColor" stroke-width="1"/>
+                <rect x="32" y="46" width="5" height="5" stroke="currentColor" stroke-width="1"/>
+                <rect x="23" y="55" width="5" height="5" stroke="currentColor" stroke-width="1"/>
+                <line x1="33" y1="55" x2="33" y2="57" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="36" y1="55" x2="36" y2="60" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="33" y1="59" x2="36" y2="59" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="svc-label">Anti-counterfeiting</div>
+          </div>
+
+
+          <!-- Leave a Message -->
+          <div class="svc-item" data-anim="from-bottom" onclick="location.href='service.html#kefu'">
+            <div class="svc-icon-svg-wrap">
+              <svg viewBox="0 0 60 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="22" y="2" width="16" height="5" rx="1.5" stroke="currentColor" stroke-width="1.3"/>
+                <rect x="24" y="7" width="12" height="11" stroke="currentColor" stroke-width="1.3"/>
+                <path d="M24 18C20 19 14 24 14 31V71C14 76 17 80 22 80H38C43 80 46 76 46 71V31C46 24 40 19 36 18Z" stroke="currentColor" stroke-width="1.3"/>
+                <line x1="14" y1="40" x2="46" y2="40" stroke="currentColor" stroke-width="0.7" opacity="0.5"/>
+                <line x1="14" y1="64" x2="46" y2="64" stroke="currentColor" stroke-width="0.7" opacity="0.5"/>
+                <!-- speech bubble -->
+                <path d="M21 44H39C40 44 41 45 41 46V57C41 58 40 59 39 59H33L29 63L29 59H21C20 59 19 58 19 57V46C19 45 20 44 21 44Z" stroke="currentColor" stroke-width="1.3" fill="none"/>
+                <line x1="23" y1="49" x2="37" y2="49" stroke="currentColor" stroke-width="1.1" opacity="0.7"/>
+                <line x1="23" y1="53" x2="33" y2="53" stroke="currentColor" stroke-width="1.1" opacity="0.7"/>
+              </svg>
+            </div>
+            <div class="svc-label">Leave a Message</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔══ SECTION 4: ENTERPRISE OVERVIEW ════════════╗ -->
+  <section class="fp-section s-about">
+    <div class="about-split-inner">
+
+      <div class="about-content-col">
+        <div class="sec-head" data-anim="from-left">
+          <div class="sec-head-en">ENTERPRISE OVERVIEW</div>
+          <h2 class="sec-head-zh">Company Profile</h2>
+          <div class="sec-head-line"></div>
+        </div>
+
+        <div class="about-card-tabs" data-anim="from-left">
+          <button class="about-tab active" data-target="intro">Company Profile</button>
+          <button class="about-tab" data-target="vision">Our Vision</button>
+        </div>
+
+        <div class="about-card" data-anim="from-bottom">
+          <span class="card-corner-tr"></span>
+          <span class="card-corner-bl"></span>
+          <div id="about-panel-intro">
+            <h3>Yongji Sangluowang Distillery Co., Ltd.</h3>
+            <p>
+              Established on the banks of the Yellow River in Yongji, Shanxi Province,
+              Sangluowang Distillery is the modern inheritor of a spirit tradition dating
+              back over 1,500 years to the Northern &amp; Southern Dynasties.
+            </p>
+            <p>
+              Our master distillers preserve every step of the original earthenware-pit
+              fermentation and copper-pot distillation — because authentic Sang Luo Jiu
+              can only be made one way.
+            </p>
+            <a href="about.html" class="about-card-more">Learn more &rsaquo;</a>
+          </div>
+          <div id="about-panel-vision" style="display:none">
+            <h3>Our Vision &amp; Values</h3>
+            <p>
+              We believe great spirits are made with patience, respect for nature, and an
+              unshakeable commitment to craft. Our vision is to bring the story of Sang Luo Jiu
+              to the world — honouring 1,500 years of heritage while embracing the future.
+            </p>
+            <p>
+              Guided by the principle of <em>manaaki</em> — to care for and honour — we treat
+              every partner, customer and visitor with the same respect we give our craft.
+            </p>
+            <a href="about.html" class="about-card-more">Learn more &rsaquo;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-img-col" data-anim="from-right">
+        <div class="about-char-visual">
+          <svg viewBox="0 0 500 500" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="woodGlow" cx="50%" cy="50%" r="60%">
+                <stop offset="0%" stop-color="#3a1c08" stop-opacity="0.6"/>
+                <stop offset="100%" stop-color="#0e0500" stop-opacity="0"/>
+              </radialGradient>
+              <filter id="woodTexture">
+                <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" result="noise"/>
+                <feColorMatrix type="saturate" values="0" in="noise" result="grayNoise"/>
+                <feBlend in="SourceGraphic" in2="grayNoise" mode="multiply" result="blend"/>
+                <feComposite in="blend" in2="SourceGraphic" operator="in"/>
+              </filter>
+            </defs>
+            <!-- Background -->
+            <rect width="500" height="500" fill="#1a0802"/>
+            <rect width="500" height="500" fill="url(#woodGlow)"/>
+            <!-- Grid lines -->
+            <line x1="0" y1="100" x2="500" y2="100" stroke="#3a1c08" stroke-width="1.5"/>
+            <line x1="0" y1="200" x2="500" y2="200" stroke="#3a1c08" stroke-width="1.5"/>
+            <line x1="0" y1="300" x2="500" y2="300" stroke="#3a1c08" stroke-width="1.5"/>
+            <line x1="0" y1="400" x2="500" y2="400" stroke="#3a1c08" stroke-width="1.5"/>
+            <line x1="100" y1="0" x2="100" y2="500" stroke="#3a1c08" stroke-width="1.5"/>
+            <line x1="200" y1="0" x2="200" y2="500" stroke="#3a1c08" stroke-width="1.5"/>
+            <line x1="300" y1="0" x2="300" y2="500" stroke="#3a1c08" stroke-width="1.5"/>
+            <line x1="400" y1="0" x2="400" y2="500" stroke="#3a1c08" stroke-width="1.5"/>
+            <!-- Row 1 -->
+            <rect x="1" y="1" width="98" height="98" fill="#1e0d04"/>
+            <text x="50" y="74" text-anchor="middle" font-size="68" fill="#b8842a" font-family="ZCOOL XiaoWei,Noto Serif SC,serif" opacity="0.92">酿</text>
+            <rect x="101" y="1" width="98" height="98" fill="#221005"/>
+            <text x="150" y="74" text-anchor="middle" font-size="68" fill="#a07828" font-family="ZCOOL XiaoWei,Noto Serif SC,serif" opacity="0.78">醇</text>
+            <rect x="201" y="1" width="98" height="98" fill="#1c0b03"/>
+            <text x="250" y="74" text-anchor="middle" font-size="68" fill="#c49232" font-family="ZCOOL XiaoWei,Noto Serif SC,serif" opacity="0.95">香</text>
+            <rect x="301" y="1" width="98" height="98" fill="#201006"/>
+            <text x="350" y="74" text-anchor="middle" font-size="68" fill="#9a7224" font-family="ZCOOL XiaoWei,Noto Serif SC,serif" opacity="0.72">窖</text>
+            <rect x="401" y="1" width="98" height="98" fill="#1e0d04"/>
+            <text x="450" y="74" text-anchor="middle" font-size="68" fill="#b88030" font-family="ZCOOL XiaoWei,Noto Serif SC,serif" opacity="0.85">坊</text>
+            <!-- Row 2 -->
+            <rect x="1" y="101" width="98" height="98" fill="#230f05"/>
+            <text x="50" y="174" text-anchor="middle" font-size="68" fill="#a07025" font-family="ZCOOL XiaoWei,Noto Serif SC,serif" opacity="0.7">泉</text>
+            <rect x="101" y="101" width="98" height="98" fill="#1b0a03"/>
+            <text x="150" y="174" text-anchor="middle" font-size="68" fill="#c89535" font-family="ZCOOL XiaoWei,Noto Serif SC,serif" opacity="0.88">糟</text>
+            <rect x="201" y="101" width="98" height="98" fill="#200d04"/>
+            <text x="250" y="174" text-anchor="middle" font-size="68" fill="#b08030" font-family="ZCOOL XiaoWei,Noto Serif SC,serif" opacity="0.82">曲</text>
+            <rect x="301" y="101" width="98" height="98" fill="#1d0c04"/>
+            <text x="350" y="174" text-anchor="middle" font-size="68" fill="#98701f" font-family="ZCOOL XiaoWei,Noto Serif SC,serif" opacity="0.68">粮</text>
+            <rect x="401" y="101" width="98" height="98" fill="#220f05"/>
+            <text x="450" y="174" text-anchor="middle" font-size="68" fill="#c28e30" font-family="ZCOOL XiaoWei,Noto Serif SC,serif" opacity="0.9">清</text>
+            <!-- Row 3 -->
+            <rect x="1" y="201" width="98" height="98" fill="#1e0d04"/>
+            <text x="50" y="274" text-anchor="middle" font-size="68" fill="#ba8828" font-family="ZCOOL XiaoWei,Noto Serif SC,serif" opacity="0.86">冽</text>
+            <rect x="101" y="201" width="98" height="98" fill="#230f05"/>
+            <text x="150" y="274" text-anchor="middle" font-size="68" fill="#a27626" font-family="ZCOOL XiaoWei,Noto Serif SC,serif" opacity="0.74">甘</text>
+            <rect x="201" y="201" width="98" height="98" fill="#1a0b03"/>
+            <text x="250" y="274" text-anchor="middle" font-size="68" fill="#cc9635" font-family="ZCOOL XiaoWei,Noto Serif SC,serif" opacity="0.96">醉</text>
+            <rect x="301" y="201" width="98" height="98" fill="#210e05"/>
+            <text x="350" y="274" text-anchor="middle" font-size="68" fill="#b08228" font-family="ZCOOL XiaoWei,Noto Serif SC,serif" opacity="0.80">品</text>
+            <rect x="401" y="201" width="98" height="98" fill="#1d0c04"/>
+            <text x="450" y="274" text-anchor="middle" font-size="68" fill="#966e20" font-family="ZCOOL XiaoWei,Noto Serif SC,serif" opacity="0.66">醴</text>
+            <!-- Row 4 -->
+            <rect x="1" y="301" width="98" height="98" fill="#220f05"/>
+            <text x="50" y="374" text-anchor="middle" font-size="68" fill="#be8e2e" font-family="ZCOOL XiaoWei,Noto Serif SC,serif" opacity="0.88">觥</text>
+            <rect x="101" y="301" width="98" height="98" fill="#1b0a03"/>
+            <text x="150" y="374" text-anchor="middle" font-size="68" fill="#a47828" font-family="ZCOOL XiaoWei,Noto Serif SC,serif" opacity="0.76">觞</text>
+            <rect x="201" y="301" width="98" height="98" fill="#200e04"/>
+            <text x="250" y="374" text-anchor="middle" font-size="68" fill="#c09030" font-family="ZCOOL XiaoWei,Noto Serif SC,serif" opacity="0.91">酣</text>
+            <rect x="301" y="301" width="98" height="98" fill="#1e0c04"/>
+            <text x="350" y="374" text-anchor="middle" font-size="68" fill="#9e7424" font-family="ZCOOL XiaoWei,Noto Serif SC,serif" opacity="0.70">酽</text>
+            <rect x="401" y="301" width="98" height="98" fill="#230f05"/>
+            <text x="450" y="374" text-anchor="middle" font-size="68" fill="#c89235" font-family="ZCOOL XiaoWei,Noto Serif SC,serif" opacity="0.93">醪</text>
+            <!-- Row 5 -->
+            <rect x="1" y="401" width="98" height="98" fill="#1d0c04"/>
+            <text x="50" y="474" text-anchor="middle" font-size="68" fill="#b08228" font-family="ZCOOL XiaoWei,Noto Serif SC,serif" opacity="0.82">桑</text>
+            <rect x="101" y="401" width="98" height="98" fill="#210e05"/>
+            <text x="150" y="474" text-anchor="middle" font-size="68" fill="#cc9838" font-family="ZCOOL XiaoWei,Noto Serif SC,serif" opacity="0.97">落</text>
+            <rect x="301" y="401" width="98" height="98" fill="#1c0b03"/>
+            <text x="350" y="474" text-anchor="middle" font-size="68" fill="#a87e2a" font-family="ZCOOL XiaoWei,Noto Serif SC,serif" opacity="0.78">名</text>
+            <rect x="401" y="401" width="98" height="98" fill="#200d04"/>
+            <text x="450" y="474" text-anchor="middle" font-size="68" fill="#bc8c2e" font-family="ZCOOL XiaoWei,Noto Serif SC,serif" opacity="0.85">酒</text>
+            <!-- Bottle silhouette overlay -->
+            <path d="M230 401V320C210 312 196 290 196 265V180C196 168 202 158 212 152V120H288V152C298 158 304 168 304 180V265C304 290 290 312 270 320V401Z" fill="rgba(255,255,255,0.04)" stroke="rgba(184,145,42,0.2)" stroke-width="1.5"/>
+            <!-- Gradient overlay from left -->
+            <rect width="500" height="500" fill="url(#leftFade)"/>
+            <defs>
+              <linearGradient id="leftFade" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#1a0802" stop-opacity="0.5"/>
+                <stop offset="35%" stop-color="#1a0802" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <div class="about-char-visual-overlay"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+</div>
+
+<!-- ══ VIDEO MODAL ═══════════════════════════════════════ -->
+<div class="vmodal" id="vmodal" role="dialog" aria-modal="true">
+  <div class="vmodal-inner">
+    <button class="vmodal-close" aria-label="Close">✕</button>
+    <video id="modalVideo" controls controlsList="nodownload" preload="none"></video>
+  </div>
+</div>
+
+<script src="js/main.js?v=10"></script>
+<script>
+  document.querySelectorAll('.about-tab').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('.about-tab').forEach(function(b){b.classList.remove('active')});
+      btn.classList.add('active');
+      document.getElementById('about-panel-intro').style.display = btn.dataset.target==='intro' ? '' : 'none';
+      document.getElementById('about-panel-vision').style.display= btn.dataset.target==='vision'? '' : 'none';
+    });
+  });
+</script>
+</body>
+</html>
+
